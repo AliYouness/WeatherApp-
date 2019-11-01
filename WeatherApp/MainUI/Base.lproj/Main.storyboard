@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TGA-c4-pmG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CityWeather-->
+        <scene sceneID="12H-qH-rZP">
+            <objects>
+                <viewController storyboardIdentifier="WeatherCitySearchViewController" id="TGA-c4-pmG" customClass="WeatherCitySearchViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n1b-fI-K2O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyb-Aa-wII">
+                                <rect key="frame" x="0.0" y="248.5" width="414" height="409"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0d-la-Nrn">
+                                        <rect key="frame" x="41.5" y="78" width="331" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="2zG-zd-1fv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czD-rl-lyP">
+                                        <rect key="frame" x="41.5" y="163" width="331" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="50p-SD-TWT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clr-lQ-kcL">
+                                        <rect key="frame" x="62" y="231" width="290" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="E2f-1S-GJO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Find City Weather">
+                                            <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateWeatherByCityTapped:" destination="TGA-c4-pmG" eventType="touchUpInside" id="vsG-Bs-tYE"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please Enter Your City..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dd5-mC-UMx">
+                                        <rect key="frame" x="41.5" y="8" width="331" height="50"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="CityName"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="nQ2-bB-QvE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="l0d-la-Nrn" firstAttribute="width" secondItem="jyb-Aa-wII" secondAttribute="width" multiplier="0.8" id="0cf-oq-O2Z"/>
+                                    <constraint firstItem="czD-rl-lyP" firstAttribute="centerX" secondItem="jyb-Aa-wII" secondAttribute="centerX" id="2bX-oQ-wqA"/>
+                                    <constraint firstItem="Dd5-mC-UMx" firstAttribute="centerX" secondItem="jyb-Aa-wII" secondAttribute="centerX" id="BAp-fA-iaK"/>
+                                    <constraint firstItem="l0d-la-Nrn" firstAttribute="top" secondItem="Dd5-mC-UMx" secondAttribute="bottom" constant="20" id="BwK-yf-CTg"/>
+                                    <constraint firstItem="Clr-lQ-kcL" firstAttribute="centerX" secondItem="jyb-Aa-wII" secondAttribute="centerX" id="JZy-aP-aGH"/>
+                                    <constraint firstItem="Dd5-mC-UMx" firstAttribute="width" secondItem="jyb-Aa-wII" secondAttribute="width" multiplier="0.8" id="Ztd-Hf-SyN"/>
+                                    <constraint firstItem="Clr-lQ-kcL" firstAttribute="top" secondItem="czD-rl-lyP" secondAttribute="bottom" constant="28" id="adq-Y0-ytM"/>
+                                    <constraint firstItem="czD-rl-lyP" firstAttribute="top" secondItem="l0d-la-Nrn" secondAttribute="bottom" constant="10" id="hOT-GT-U4r"/>
+                                    <constraint firstItem="l0d-la-Nrn" firstAttribute="centerX" secondItem="jyb-Aa-wII" secondAttribute="centerX" id="iUn-S8-SBu"/>
+                                    <constraint firstItem="Clr-lQ-kcL" firstAttribute="width" secondItem="jyb-Aa-wII" secondAttribute="width" multiplier="0.7" id="id2-OA-Sff"/>
+                                    <constraint firstItem="Dd5-mC-UMx" firstAttribute="top" secondItem="jyb-Aa-wII" secondAttribute="top" constant="8" id="itl-Yh-Tgq"/>
+                                    <constraint firstItem="czD-rl-lyP" firstAttribute="width" secondItem="jyb-Aa-wII" secondAttribute="width" multiplier="0.8" id="x9D-X8-Obp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jyb-Aa-wII" firstAttribute="centerX" secondItem="S5K-Cp-qwt" secondAttribute="centerX" id="B7S-NS-IVH"/>
+                            <constraint firstItem="jyb-Aa-wII" firstAttribute="width" secondItem="S5K-Cp-qwt" secondAttribute="width" id="JtN-bq-pLz"/>
+                            <constraint firstItem="jyb-Aa-wII" firstAttribute="height" secondItem="S5K-Cp-qwt" secondAttribute="height" multiplier="0.5" id="bd0-oW-YGE"/>
+                            <constraint firstItem="jyb-Aa-wII" firstAttribute="centerY" secondItem="S5K-Cp-qwt" secondAttribute="centerY" id="onB-h0-Cy5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S5K-Cp-qwt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="CityWeather" image="SearchIcon" id="g3V-W1-XYk"/>
+                    <navigationItem key="navigationItem" id="rDA-bc-7cn"/>
+                    <connections>
+                        <outlet property="citeTemp" destination="l0d-la-Nrn" id="sr6-WV-JVB"/>
+                        <outlet property="cityName" destination="czD-rl-lyP" id="hbs-eN-36L"/>
+                        <outlet property="cityTextField" destination="Dd5-mC-UMx" id="ni7-NV-1wv"/>
+                        <outlet property="cityWeatherButton" destination="Clr-lQ-kcL" id="oV8-WS-Sfn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNN-h9-5vQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1436.2318840579712" y="-368.30357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SearchIcon" width="30" height="30"/>
+    </resources>
+</document>
