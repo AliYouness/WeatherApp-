@@ -1,11 +1,9 @@
 //
 //  Animator.swift
 //  WeatherApp
+//  Created by Ali Youness on 10/25/19.
+//  Copyright © 2019 Ali Youness. All rights reserved.
 //
-//  Created by  Евгений on 04/01/2019.
-//  Copyright © 2019 LosAnatoly Inc. All rights reserved.
-//
-
 import Foundation
 import UIKit
 

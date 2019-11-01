@@ -2,8 +2,8 @@
 //  UIView+Ext.swift
 //  WeatherApp
 //
-//  Created by  Евгений on 05/01/2019.
-//  Copyright © 2019 LosAnatoly Inc. All rights reserved.
+//  Created by Ali Youness on 10/25/19.
+//  Copyright © 2019 Ali Youness. All rights reserved.
 //
 
 import Foundation
